@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name         = "WistoryPod"
+    s.name         = "Wistory"
     s.version      = "0.1.0"
     s.summary      = "Wistory stories realisation"
     s.description  = <<-DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                   LICENSE
                 }
     s.author             = { "$(git config user.name)" => "$(git config user.email)" }
-    s.source       = { :git => "https://github.com/ichikmarev/WistoryPod.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/Wistory/Wistory.git", :tag => "#{s.version}" }
     s.public_header_files = "Wistory.framework/Headers/*.h"
     s.source_files = "Wistory.framework/Headers/*.h"
     s.vendored_frameworks = "Wistory.framework"
