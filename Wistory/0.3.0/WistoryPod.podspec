@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name         = "WistoryPod"
+    s.name         = "Wistory"
     s.version      = "0.3.0"
     s.summary      = "Wistory stories realisation"
     s.description  = <<-DESC
