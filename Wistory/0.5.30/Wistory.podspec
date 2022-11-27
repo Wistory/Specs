@@ -1,0 +1,26 @@
+Pod::Spec.new do |s|
+    s.name         = "Wistory"
+    s.version      = "0.5.30"
+    s.summary      = "Wistory stories realisation"
+    s.description  = <<-DESC
+    Wistory
+    DESC
+    s.homepage     = "https://wistory.io"
+    s.license = { :type => 'Copyright', :text => <<-LICENSE
+                   Copyright 2020 VOLGA-VOLGA
+                  LICENSE
+                }
+    s.author             = { "$(git config user.name)" => "$(git config user.email)" }
+    s.source       = { :git => "https://github.com/Wistory/sdk.ios.git", :tag => "#{s.version}" }
+    s.public_header_files = "Wistory.framework/Headers/*.h"
+    s.source_files = "Wistory.framework/Headers/*.h"
+    s.vendored_frameworks = "Wistory.framework"
+    s.platform = :ios
+
+    s.ios.deployment_target  = '11.0'
+
+    s.dependency 'Nuke'
+
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+end
